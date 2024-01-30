@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container{
+    align-content: center;
+    height: 135px;
+    width: 266px;
+    margin-right: 30px;
+    margin-left: -10px;
+    margin-bottom: 100px 
+}
+
+.clock {
+    display: flex;
+    font-size: 2em;
+    padding: 34px;
+}
+
+.clock div {
+    padding: 0.2em;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 0.2em;
+}
