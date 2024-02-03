@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Tejal Shinde</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Tejal Shinde</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.jpg" alt="">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1"> Hello, I'm</p>
+            <h1 class="title"> Tejal Shinde </h1>
+            <p class="section_text_p2"> Fresher </p>
+
+            <div class="btn_container">
+                <button class="btn btn-color-2"
+                    onclick="window.open('./assets/Tejal-Shinde-Resume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact</button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt=" my linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/tejal-shinde-14412328a/'">
+                <img src="./assets/github.png" alt=" my github profile" class="icon"
+                    onclick="location.href='https://github.com/account'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1"> Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section_pic-container">
+            <img src="./assets/about_pic.png" alt="Profile pic" class="about-pic">
+        </div>
+
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p> FRESHER <br>Eager to work in tech industry!</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon" class="icon">
+                    <h3>Education</h3>
+                    <p> BSC cs <br>MCA</p>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+
+    <section id="skills">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title"> Skills </h1>
+
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-sub-title"> Frontend Devlopment</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>REACT_JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skill-sub-title"> Backend Devlopment</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>JAVA</h3>
+                                <p>Intermidiate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>PYTHON</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>NODE_JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Databases</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>MYSQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Skill icon" class="icon">
+                            <div>
+                                <h3>MONGODB</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.jpg" alt="project 1" class="project-img" />
+                    </div>
+                    <h2 class="skill-sub-title project-title">Freelance Online Job Portal</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Tstej/FreelanceOnlineJobPortal'">Project
+                            Link</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.jpg" alt="project 2" class="project-img" />
+                    </div>
+                    <h2 class="skill-sub-title project-title">Edupal- Educational Partner</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Tstej/Edupal_Project-'">Project Link</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='http://localhost/project/final_project/main.php'">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.jpg" alt="project 3" class="project-img" />
+                    </div>
+                    <h2 class="skill-sub-title project-title">React Projects</h2>
+                    <div class="btn_container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/Tstej/REACT_Projects'">Project Link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:tejal.shinde785@gmail.com">tejal.shinde785@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="mailto:tejal.shinde785@gmail.com">https://www.linkedin.com/in/tejal-shinde-14412328a/</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container"> 
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Tejal Shinde. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
